@@ -1,10 +1,8 @@
-"use client";
-import { Heading } from "@chakra-ui/react";
+'use client';
+
+import React from 'react';
+import { Heading } from '@chakra-ui/react';
 
 export default function Home() {
-  return (
-    <>
-      <Heading>Hello</Heading>
-    </>
-  );
+    return <Heading>Hello</Heading>;
 }
