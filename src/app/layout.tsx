@@ -1,18 +1,25 @@
-"use client";
-import { Providers } from "./providers";
+'use client';
+
+import React from 'react';
+import { Flex } from '@chakra-ui/react';
+import { Providers } from './providers';
+import SideDrawer from '../components/SideDrawer';
 
 export default function RootLayout({
-  children,
+    children,
 }: {
-  children: React.ReactNode
+    children: React.ReactNode;
 }) {
-  return (
-    <html lang="en">
-      <body>
-        <Providers>
-          {children}
-        </Providers>
-      </body>
-    </html>
-  );
+    return (
+        <html lang="en">
+            <body>
+                <Providers>
+                    <Flex justifyContent="flex-end">
+                        <SideDrawer />
+                    </Flex>
+                    {children}
+                </Providers>
+            </body>
+        </html>
+    );
 }
