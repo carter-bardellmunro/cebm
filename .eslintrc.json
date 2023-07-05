@@ -69,6 +69,8 @@
     "react/prop-types": 0,
     "react/jsx-one-expression-per-line": 0,
     "no-console": "error",
-    "@typescript-eslint/explicit-function-return-type": 0
+    "@typescript-eslint/explicit-function-return-type": 0,
+    "react/function-component-definition": 0,
+    "import/no-extraneous-dependencies": 0
   }
 }
