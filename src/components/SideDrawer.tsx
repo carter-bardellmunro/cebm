@@ -44,13 +44,16 @@ function DrawerExample() {
                     <DrawerCloseButton size="lg" colorScheme="purple" />
                     <VStack spacing="10" alignItems="center" my="50px">
                         <Link as={NextLink} href="#" fontSize="4xl">
+                            Home
+                        </Link>
+                        <Link as={NextLink} href="#" fontSize="4xl">
                             About Me
                         </Link>
                         <Link as={NextLink} href="#" fontSize="4xl">
-                            My Work
+                            Skills
                         </Link>
                         <Link as={NextLink} href="#" fontSize="4xl">
-                            Contact Me
+                            Get In Touch
                         </Link>
                     </VStack>
                 </DrawerContent>
