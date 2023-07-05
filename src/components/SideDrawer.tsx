@@ -6,8 +6,6 @@ import {
     DrawerOverlay,
     DrawerContent,
     DrawerCloseButton,
-    DrawerHeader,
-    DrawerBody,
     Link,
     IconButton,
     VStack,
@@ -21,46 +19,41 @@ function DrawerExample() {
 
     return (
         <>
-            <IconButton
-                ref={btnRef}
-                onClick={onOpen}
-                color="black"
-                colorScheme="transparent"
-                size="lg"
-                aria-label="Search database"
-                icon={<HamburgerIcon />}
-            >
-                Open
-            </IconButton>
+            <Box alignItems="flex-end">
+                <IconButton
+                    ref={btnRef}
+                    onClick={onOpen}
+                    colorScheme="orange"
+                    size="lg"
+                    aria-label="Search database"
+                    icon={<HamburgerIcon />}
+                    marginRight="16px"
+                    marginTop="16px"
+                />
+            </Box>
             <Drawer
                 isOpen={isOpen}
-                placement="left"
+                placement="top"
                 onClose={onClose}
                 finalFocusRef={btnRef}
+                size="xl"
+                colorScheme="telegram"
             >
                 <DrawerOverlay />
-                <Drawer placement="left" onClose={onClose} isOpen={isOpen}>
-                    <DrawerOverlay />
-                    <DrawerContent>
-                        <Box alignItems="flex-start">
-                            <DrawerCloseButton />
-                            <DrawerHeader>The Menu</DrawerHeader>
-                        </Box>
-                        <DrawerBody>
-                            <VStack align="flex-start" spacing="5">
-                                <Link as={NextLink} href="#">
-                                    About Me
-                                </Link>
-                                <Link as={NextLink} href="#">
-                                    Contact Me
-                                </Link>
-                                <Link as={NextLink} href="#">
-                                    Blog
-                                </Link>
-                            </VStack>
-                        </DrawerBody>
-                    </DrawerContent>
-                </Drawer>
+                <DrawerContent>
+                    <DrawerCloseButton size="lg" colorScheme="purple" />
+                    <VStack spacing="10" alignItems="center" my="50px">
+                        <Link as={NextLink} href="#" fontSize="4xl">
+                            About Me
+                        </Link>
+                        <Link as={NextLink} href="#" fontSize="4xl">
+                            My Work
+                        </Link>
+                        <Link as={NextLink} href="#" fontSize="4xl">
+                            Contact Me
+                        </Link>
+                    </VStack>
+                </DrawerContent>
             </Drawer>
         </>
     );
