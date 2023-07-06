@@ -1,28 +1,36 @@
 import React from 'react';
 import { Box, Container, IconButton, Text, Stack } from '@chakra-ui/react';
-import { BsGithub, BsLinkedin } from 'react-icons/bs';
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
 const Footer = () => (
-    <Box position="relative" left="0" bottom="0">
+    <Box bgColor="black" marginTop="auto">
         <Container
             as={Stack}
-            maxW="6xl"
+            maxW="3xl"
             py={4}
             direction={{ base: 'column', md: 'row' }}
             spacing={4}
             justify={{ base: 'center', md: 'space-between' }}
             align={{ base: 'center', md: 'center' }}
         >
-            <Text ml="40">Built from scratch by me :) </Text>
+            <Text color="gray.200">Built from scratch by me :) </Text>
             <Stack direction="row" spacing={6}>
                 <IconButton
-                    icon={<BsGithub />}
-                    size="lg"
+                    icon={<FaGithub />}
+                    size="md"
+                    fontSize="25px"
+                    colorScheme="gray"
+                    borderRadius="2"
+                    _hover={{ bg: '#c9510c' }}
                     aria-label="Link to Github"
                 />
                 <IconButton
-                    icon={<BsLinkedin />}
-                    size="lg"
+                    icon={<FaLinkedinIn />}
+                    size="md"
+                    fontSize="25px"
+                    colorScheme="gray"
+                    borderRadius="2"
+                    _hover={{ bg: '#0072b1' }}
                     aria-label="Link to LinkedIn"
                 />
             </Stack>
