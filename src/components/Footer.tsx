@@ -3,7 +3,7 @@ import { Box, Container, IconButton, Text, Stack } from '@chakra-ui/react';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
 const Footer = () => (
-    <Box bgColor="black" marginTop="auto">
+    <Box marginTop="auto">
         <Container
             as={Stack}
             maxW="3xl"

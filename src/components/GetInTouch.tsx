@@ -4,13 +4,8 @@ import { EmailIcon } from '@chakra-ui/icons';
 import CTAButton from './CTAButton';
 
 const GetInTouch = () => (
-    <Flex
-        flexDir="column"
-        bg="black"
-        textAlign="center"
-        justifyContent="center"
-    >
-        <Container maxW="lg">
+    <Flex flexDir="column" textAlign="center" justifyContent="center">
+        <Container maxW="lg" my="40px">
             <Heading size="md" color="#689af8" p="20px">
                 So, what&apos;s next?
             </Heading>
@@ -25,7 +20,7 @@ const GetInTouch = () => (
             <Flex
                 flexDir="row"
                 alignItems="center"
-                marginBottom="20px"
+                // marginBottom="20px"
                 justifyContent="center"
             >
                 <Link
