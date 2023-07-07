@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Flex, Heading, Text, Link } from '@chakra-ui/react';
 import { EmailIcon } from '@chakra-ui/icons';
+import CTAButton from './CTAButton';
 
 const GetInTouch = () => (
     <Flex
@@ -34,19 +35,7 @@ const GetInTouch = () => (
                         textDecoration: 'none',
                     }}
                 >
-                    <Flex
-                        flexDir="row"
-                        alignItems="center"
-                        borderBottom="1px solid #689af8"
-                        pb="5px"
-                        transition="all 508ms cubic-bezier(0, 0, 0.85, -0.02)"
-                        _hover={{
-                            marginLeft: '30px',
-                        }}
-                    >
-                        <Text pr="15px">Send me an email</Text>
-                        <EmailIcon color="white" />
-                    </Flex>
+                    <CTAButton text="Send me an email" icon={<EmailIcon />} />
                 </Link>
             </Flex>
         </Container>
