@@ -19,40 +19,48 @@ const skills = [
     ['Component driven development', 'Agile', 'Jira'],
 ];
 
-const SkillSet = () => (
-    <Box>
-        <Flex
-            flexDir="row"
-            alignItems="center"
-            justifyContent="space-evenly"
-            w="18em"
-        >
-            <Heading size="3xl" color="white">
-                My Skills
-            </Heading>
-            <FiPlus color="#689af8" size="2em" />
-        </Flex>
-        <Flex flexDir="row" justifyContent="center" my="90px">
-            <SimpleGrid columns={3} spacing={10}>
-                {skills.map(skill => (
-                    <List spacing={3}>
-                        <ListItem color="gray.300">
-                            <ListIcon as={FiZap} color="#689af8" />
-                            {skill[0]}
-                        </ListItem>
-                        <ListItem color="gray.300">
-                            <ListIcon as={FiZap} color="#689af8" />
-                            {skill[1]}
-                        </ListItem>
-                        <ListItem color="gray.300">
-                            <ListIcon as={FiZap} color="#689af8" />
-                            {skill[2]}
-                        </ListItem>
-                    </List>
-                ))}
-            </SimpleGrid>
-        </Flex>
-    </Box>
-);
+const SkillSet = () => {
+    return (
+        <Box>
+            <Flex
+                flexDir="row"
+                alignItems="center"
+                justifyContent="space-evenly"
+                w="18em"
+            >
+                <Heading size="3xl" color="white">
+                    My Skills
+                </Heading>
+                <FiPlus color="#689af8" size="2em" />
+            </Flex>
+            <Flex flexDir="row" justifyContent="center" my="90px">
+                <SimpleGrid columns={3} spacing={10}>
+                    {skills.map(skill => {
+                        return (
+                            <List spacing={3}>
+                                <ListItem color="gray.300">
+                                    <ListIcon as={FiZap} color="#689af8" />
+                                    {skill[0]}
+                                </ListItem>
+                                {skill[1] ? (
+                                    <ListItem color="gray.300">
+                                        <ListIcon as={FiZap} color="#689af8" />
+                                        {skill[1]}
+                                    </ListItem>
+                                ) : null}
+                                {skill[2] ? (
+                                    <ListItem color="gray.300">
+                                        <ListIcon as={FiZap} color="#689af8" />
+                                        {skill[2]}
+                                    </ListItem>
+                                ) : null}
+                            </List>
+                        );
+                    })}
+                </SimpleGrid>
+            </Flex>
+        </Box>
+    );
+};
 
 export default SkillSet;
