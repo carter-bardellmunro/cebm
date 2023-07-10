@@ -22,13 +22,8 @@ const skills = [
 const SkillSet = () => {
     return (
         <Box>
-            <Flex
-                flexDir="row"
-                alignItems="center"
-                justifyContent="space-evenly"
-                w="18em"
-            >
-                <Heading size="3xl" color="white">
+            <Flex flexDir="row" alignItems="center" w="18em">
+                <Heading size="3xl" color="white" mr="10px">
                     My Skills
                 </Heading>
                 <FiPlus color="#689af8" size="2em" />

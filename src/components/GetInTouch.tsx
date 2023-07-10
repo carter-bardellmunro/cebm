@@ -18,12 +18,7 @@ const GetInTouch = () => {
                     free to drop me an email at cartermunro11@gmail.com.
                     I&apos;d love to hear from you!
                 </Text>
-                <Flex
-                    flexDir="row"
-                    alignItems="center"
-                    // marginBottom="20px"
-                    justifyContent="center"
-                >
+                <Flex flexDir="row" alignItems="center" justifyContent="center">
                     <Link
                         href="mailto:cartermunro11@gmail.com"
                         color="gray.300"
