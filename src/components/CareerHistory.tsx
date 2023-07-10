@@ -2,9 +2,7 @@ import React from 'react';
 import {
     Box,
     Card,
-    CardHeader,
     CardBody,
-    CardFooter,
     Flex,
     Heading,
     Stack,
@@ -15,6 +13,24 @@ import {
 import { FiPlus } from 'react-icons//fi';
 import { TbFileCertificate } from 'react-icons/tb';
 import CTAButton from './CTAButton';
+
+const jobs = [
+    {
+        company: 'Easy Crypto',
+        position: 'Full Stack Software Engineer',
+        dates: 'Jan 2022 - Aug 2022',
+    },
+    {
+        company: 'PHX Consulting',
+        position: 'Freelance Full Stack Software Engineer',
+        dates: 'Oct 2021 - Dec 2022',
+    },
+    {
+        company: 'Enspiral Dev Academy',
+        position: 'Web Development Bootcamp',
+        dates: 'April 2021 - July 2021',
+    },
+];
 
 const CareerHistory = () => {
     return (
@@ -36,35 +52,21 @@ const CareerHistory = () => {
                         wrap="wrap"
                         justifyContent="center"
                     >
-                        <Box>
-                            <Heading size="md" color="#689af8">
-                                Easy Crypto
-                            </Heading>
-                            <Heading size="sm" color="white">
-                                Full Stack Software Engineer
-                            </Heading>
-                            <Text size="sm" color="gray.300">
-                                Jan 2022 - Aug 2022
-                            </Text>
-                        </Box>
-                        <Box>
-                            <Heading size="md" color="#689af8">
-                                PHX Consulting
-                            </Heading>
-                            <Heading size="sm" color="white">
-                                Freelance Full Stack Software Engineer
-                            </Heading>
-                            <Text color="gray.300">Oct 2021 - Dec 2022</Text>
-                        </Box>
-                        <Box>
-                            <Heading size="md" color="#689af8">
-                                Enspiral Dev Academy
-                            </Heading>
-                            <Heading size="sm" color="white">
-                                Web Development Bootcamp
-                            </Heading>
-                            <Text color="gray.300">April 2021 - Jul 2021</Text>
-                        </Box>
+                        {jobs.map(job => {
+                            return (
+                                <Box>
+                                    <Heading size="md" color="#689af8">
+                                        {job.company}
+                                    </Heading>
+                                    <Heading size="sm" color="white">
+                                        {job.position}
+                                    </Heading>
+                                    <Text size="sm" color="gray.300">
+                                        {job.dates}
+                                    </Text>
+                                </Box>
+                            );
+                        })}
                     </Stack>
                 </CardBody>
             </Card>
