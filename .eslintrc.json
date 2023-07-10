@@ -71,6 +71,7 @@
     "no-console": "error",
     "@typescript-eslint/explicit-function-return-type": 0,
     "react/function-component-definition": 0,
-    "import/no-extraneous-dependencies": 0
+    "import/no-extraneous-dependencies": 0,
+    "arrow-body-style": ["error", "always"]
   }
 }

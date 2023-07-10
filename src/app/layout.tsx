@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Flex } from '@chakra-ui/react';
+import { Box, Flex } from '@chakra-ui/react';
 import { Providers } from './providers';
 import SideDrawer from '../components/SideDrawer';
 
@@ -14,10 +14,12 @@ export default function RootLayout({
         <html lang="en">
             <body>
                 <Providers>
-                    <Flex justifyContent="flex-end">
-                        <SideDrawer />
-                    </Flex>
-                    {children}
+                    <Box bg="black">
+                        <Flex justifyContent="flex-end">
+                            <SideDrawer />
+                        </Flex>
+                        {children}
+                    </Box>
                 </Providers>
             </body>
         </html>
