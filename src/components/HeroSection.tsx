@@ -30,7 +30,7 @@ const HeroSection = () => {
                         <Heading size="4xl" color="#335E31">
                             I&apos;m Carter
                         </Heading>
-                        <Heading size="3xl" color="white">
+                        <Heading size="4xl" color="white">
                             .
                         </Heading>
                     </Flex>
@@ -46,7 +46,7 @@ const HeroSection = () => {
                 <NextImage
                     src="/sanfrancisco.jpg"
                     alt="Me standing in front of wall"
-                    width={400}
+                    width={350}
                     height={100}
                     style={imageStyle}
                 />

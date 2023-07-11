@@ -17,7 +17,7 @@ const AboutMe = () => {
                 <FiPlus color="#689af8" size="2em" />
             </Flex>
             <Flex
-                flexDir="row"
+                flexDir={{ base: 'column', lg: 'row' }}
                 alignItems="center"
                 justifyContent="center"
                 py="5em"
