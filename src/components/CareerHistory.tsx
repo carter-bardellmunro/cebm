@@ -34,14 +34,14 @@ const jobs = [
 
 const CareerHistory = () => {
     return (
-        <Box py="50">
+        <Box pt="4em" pb="10em" id="my-career">
             <Flex flexDir="row" alignItems="center" justifyContent="flex-end">
                 <Heading size="3xl" color="white" mr="10px">
-                    Career
+                    Career... So Far
                 </Heading>
                 <FiPlus color="#689af8" size="2em" />
             </Flex>
-            <Card bg="black" py="2em">
+            <Card bg="transparent" pt="7em" pb="3em">
                 <CardBody>
                     <Stack
                         direction={['column', 'column', 'column', 'row']}
@@ -50,9 +50,9 @@ const CareerHistory = () => {
                         wrap="wrap"
                         justifyContent="center"
                     >
-                        {jobs.map(job => {
+                        {jobs.map((job, i) => {
                             return (
-                                <Box>
+                                <Box key={i}>
                                     <Heading size="md" color="#689af8">
                                         {job.company}
                                     </Heading>
@@ -68,7 +68,7 @@ const CareerHistory = () => {
                     </Stack>
                 </CardBody>
             </Card>
-            <Flex alignItems="center" justifyContent="center" pt="3em">
+            <Flex alignItems="center" justifyContent="center">
                 <Link
                     color="white"
                     _hover={{

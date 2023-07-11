@@ -14,7 +14,7 @@ export default function RootLayout({
         <html lang="en">
             <body>
                 <Providers>
-                    <Box bg="black">
+                    <Box bg="#121113">
                         <Flex justifyContent="flex-end">
                             <SideDrawer />
                         </Flex>
