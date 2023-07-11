@@ -33,18 +33,18 @@ const SkillSet = () => {
                     {skills.map(skill => {
                         return (
                             <List spacing={3}>
-                                <ListItem color="gray.300">
+                                <ListItem fontSize="xl" color="gray.300">
                                     <ListIcon as={FiZap} color="#689af8" />
                                     {skill[0]}
                                 </ListItem>
                                 {skill[1] ? (
-                                    <ListItem color="gray.300">
+                                    <ListItem fontSize="xl" color="gray.300">
                                         <ListIcon as={FiZap} color="#689af8" />
                                         {skill[1]}
                                     </ListItem>
                                 ) : null}
                                 {skill[2] ? (
-                                    <ListItem color="gray.300">
+                                    <ListItem fontSize="xl" color="gray.300">
                                         <ListIcon as={FiZap} color="#689af8" />
                                         {skill[2]}
                                     </ListItem>
