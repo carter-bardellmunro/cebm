@@ -20,7 +20,7 @@ const navOptions = [
     { link: 'Contact', id: '#contact-me' },
 ];
 
-function DrawerExample() {
+const DrawerExample = () => {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const btnRef = React.useRef<HTMLButtonElement>(null);
 
@@ -90,6 +90,6 @@ function DrawerExample() {
             </Drawer>
         </>
     );
-}
+};
 
 export default DrawerExample;
