@@ -21,14 +21,14 @@ const skills = [
 
 const SkillSet = () => {
     return (
-        <Box id="my-skills">
+        <Box id="my-skills" py="4em">
             <Flex flexDir="row" alignItems="center" w="18em">
                 <Heading size="3xl" color="white" mr="10px">
                     My Skills
                 </Heading>
                 <FiPlus color="#689af8" size="2em" />
             </Flex>
-            <Flex flexDir="row" justifyContent="center" my="90px">
+            <Flex flexDir="row" justifyContent="center" my="10em">
                 <SimpleGrid columns={3} spacing={10}>
                     {skills.map((skill, i) => {
                         return (

@@ -9,7 +9,7 @@ const imageStyle = {
 
 const AboutMe = () => {
     return (
-        <Box py="5em" id="about-me">
+        <Box py="4em" id="about-me">
             <Flex flexDir="row" alignItems="center" justifyContent="flex-end">
                 <Heading size="3xl" color="white" mr="10px">
                     About Me
@@ -20,7 +20,7 @@ const AboutMe = () => {
                 flexDir="row"
                 alignItems="center"
                 justifyContent="center"
-                py="3em"
+                py="5em"
             >
                 <Box>
                     <NextImage
