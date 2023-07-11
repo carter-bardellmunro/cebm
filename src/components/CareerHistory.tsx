@@ -23,7 +23,7 @@ const jobs = [
     {
         company: 'PHX Consulting',
         position: 'Freelance Full Stack Software Engineer',
-        dates: 'Oct 2021 - Dec 2022',
+        dates: 'Oct 2021 - Dec 2021',
     },
     {
         company: 'Enspiral Dev Academy',
@@ -35,13 +35,11 @@ const jobs = [
 const CareerHistory = () => {
     return (
         <Box py="50">
-            <Flex alignItems="center" justifyContent="space-between">
-                <Flex flexDir="row" alignItems="center">
-                    <Heading size="3xl" color="white" mr="10px">
-                        Career
-                    </Heading>
-                    <FiPlus color="#689af8" size="2em" />
-                </Flex>
+            <Flex flexDir="row" alignItems="center" justifyContent="flex-end">
+                <Heading size="3xl" color="white" mr="10px">
+                    Career
+                </Heading>
+                <FiPlus color="#689af8" size="2em" />
             </Flex>
             <Card bg="black" py="2em">
                 <CardBody>
