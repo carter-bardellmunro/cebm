@@ -26,7 +26,7 @@ const DrawerExample = () => {
 
     return (
         <>
-            <Box alignItems="flex-end" position="fixed">
+            <Box justifyContent="flex-end" position="fixed">
                 <IconButton
                     ref={btnRef}
                     onClick={onOpen}
