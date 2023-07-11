@@ -12,7 +12,8 @@ const HeroSection = () => {
             flexDir={{ base: 'column', lg: 'row' }}
             justifyContent="space-around"
             alignItems="center"
-            py="10em"
+            pt="7em"
+            pb="10em"
         >
             <Box>
                 <Container
@@ -42,7 +43,7 @@ const HeroSection = () => {
                     </Box>
                 </Container>
             </Box>
-            <Box>
+            <Box pt={{ base: '4em', lg: '0em' }}>
                 <NextImage
                     src="/sanfrancisco.jpg"
                     alt="Me standing in front of wall"
