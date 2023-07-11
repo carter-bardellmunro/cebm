@@ -37,7 +37,7 @@ const CareerHistory = () => {
         <Box pt="4em" pb="10em" id="my-career">
             <Flex flexDir="row" alignItems="center" justifyContent="flex-end">
                 <Heading size="3xl" color="white" mr="10px">
-                    Career
+                    Career... So Far
                 </Heading>
                 <FiPlus color="#689af8" size="2em" />
             </Flex>

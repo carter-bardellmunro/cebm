@@ -8,7 +8,7 @@ const HeroSection = () => {
                 Hi.
             </Heading>
             <Flex flexDir="row">
-                <Heading size="4xl" color="#689af8">
+                <Heading size="4xl" color="#335E31">
                     I&apos;m Carter
                 </Heading>
                 <Heading size="4xl" color="white">

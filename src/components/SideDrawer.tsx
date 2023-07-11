@@ -48,7 +48,7 @@ function DrawerExample() {
                 colorScheme="telegram"
             >
                 <DrawerOverlay />
-                <DrawerContent bg="#689af8">
+                <DrawerContent bg="#4D7EA8">
                     <DrawerCloseButton size="lg" />
                     <VStack spacing="10" alignItems="center" my="50px">
                         {navOptions.map((option, i) => {
