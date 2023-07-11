@@ -13,17 +13,25 @@ import {
 import NextLink from 'next/link';
 import { HamburgerIcon } from '@chakra-ui/icons';
 
+const navOptions = [
+    { link: 'About Me', id: '#about-me' },
+    { link: 'Skills', id: '#my-skills' },
+    { link: 'Career', id: '#my-career' },
+    { link: 'Contact', id: '#contact-me' },
+];
+
 function DrawerExample() {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const btnRef = React.useRef<HTMLButtonElement>(null);
 
     return (
         <>
-            <Box alignItems="flex-end">
+            <Box alignItems="flex-end" position="fixed">
                 <IconButton
                     ref={btnRef}
                     onClick={onOpen}
-                    colorScheme="orange"
+                    bg="#689af8"
+                    colorScheme="white"
                     size="lg"
                     aria-label="Search database"
                     icon={<HamburgerIcon />}
@@ -40,21 +48,43 @@ function DrawerExample() {
                 colorScheme="telegram"
             >
                 <DrawerOverlay />
-                <DrawerContent>
-                    <DrawerCloseButton size="lg" colorScheme="purple" />
+                <DrawerContent bg="#689af8">
+                    <DrawerCloseButton size="lg" />
                     <VStack spacing="10" alignItems="center" my="50px">
-                        <Link as={NextLink} href="#" fontSize="4xl">
-                            Home
-                        </Link>
-                        <Link as={NextLink} href="#" fontSize="4xl">
-                            About Me
-                        </Link>
-                        <Link as={NextLink} href="#" fontSize="4xl">
-                            Skills
-                        </Link>
-                        <Link as={NextLink} href="#" fontSize="4xl">
-                            Get In Touch
-                        </Link>
+                        {navOptions.map((option, i) => {
+                            return (
+                                <Link
+                                    key={i}
+                                    as={NextLink}
+                                    href={`${option.id}`}
+                                    fontSize="4xl"
+                                    color="white"
+                                    position="relative"
+                                    onClick={onClose}
+                                    _before={{
+                                        content: '""',
+                                        position: 'absolute',
+                                        width: '100%',
+                                        height: '4px',
+                                        borderRadius: '4px',
+                                        backgroundColor: 'white',
+                                        bottom: 0,
+                                        left: 0,
+                                        transformOrigin: 'right',
+                                        transform: 'scaleX(0)',
+                                        transition: 'transform .3s ease-in-out',
+                                    }}
+                                    _hover={{
+                                        _before: {
+                                            transformOrigin: 'left',
+                                            transform: 'scaleX(1)',
+                                        },
+                                    }}
+                                >
+                                    {option.link}
+                                </Link>
+                            );
+                        })}
                     </VStack>
                 </DrawerContent>
             </Drawer>

@@ -34,7 +34,7 @@ const jobs = [
 
 const CareerHistory = () => {
     return (
-        <Box py="50">
+        <Box py="50" id="my-career">
             <Flex flexDir="row" alignItems="center" justifyContent="flex-end">
                 <Heading size="3xl" color="white" mr="10px">
                     Career
@@ -50,9 +50,9 @@ const CareerHistory = () => {
                         wrap="wrap"
                         justifyContent="center"
                     >
-                        {jobs.map(job => {
+                        {jobs.map((job, i) => {
                             return (
-                                <Box>
+                                <Box key={i}>
                                     <Heading size="md" color="#689af8">
                                         {job.company}
                                     </Heading>

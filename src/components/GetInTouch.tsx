@@ -5,7 +5,12 @@ import CTAButton from './CTAButton';
 
 const GetInTouch = () => {
     return (
-        <Flex flexDir="column" textAlign="center" justifyContent="center">
+        <Flex
+            id="contact-me"
+            flexDir="column"
+            textAlign="center"
+            justifyContent="center"
+        >
             <Container maxW="lg" my="40px">
                 <Heading size="md" color="#689af8" p="20px">
                     So, what&apos;s next?
