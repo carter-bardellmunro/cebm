@@ -33,7 +33,7 @@ const SkillSet = () => {
                 </Box>
                 <FiPlus color="#689af8" size="2em" />
             </Flex>
-            <Flex flexDir="row" justifyContent="" my="10em">
+            <Flex flexDir="row" justifyContent="center" my="10em">
                 <SimpleGrid columns={3} spacing={10}>
                     {skills.map((skill, i) => {
                         return (
