@@ -1,7 +1,8 @@
 import React from 'react';
 import NextImage from 'next/image';
-import { Box, Container, Flex, Heading, Text } from '@chakra-ui/react';
+import { Box, Container, Flex, Text } from '@chakra-ui/react';
 import { FiPlus } from 'react-icons//fi';
+import SectionHeading from './SectionHeading';
 
 const imageStyle = {
     borderRadius: '3%',
@@ -11,9 +12,9 @@ const AboutMe = () => {
     return (
         <Box py="4em" id="about-me">
             <Flex flexDir="row" alignItems="center" justifyContent="flex-end">
-                <Heading size="3xl" color="white" mr="10px">
-                    About Me
-                </Heading>
+                <Box mr="10px">
+                    <SectionHeading text="About Me" size="3xl" color="FFFFFF" />
+                </Box>
                 <FiPlus color="#689af8" size="2em" />
             </Flex>
             <Flex

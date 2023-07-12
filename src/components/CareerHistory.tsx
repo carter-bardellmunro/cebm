@@ -13,6 +13,7 @@ import {
 import { FiPlus } from 'react-icons//fi';
 import { TbFileCertificate } from 'react-icons/tb';
 import CTAButton from './CTAButton';
+import SectionHeading from './SectionHeading';
 
 const jobs = [
     {
@@ -36,9 +37,13 @@ const CareerHistory = () => {
     return (
         <Box pt="4em" pb="10em" id="my-career">
             <Flex flexDir="row" alignItems="center" justifyContent="flex-end">
-                <Heading size="3xl" color="white" mr="10px">
-                    Career... So Far
-                </Heading>
+                <Box mr="10px">
+                    <SectionHeading
+                        text="Career... So Far"
+                        size="3xl"
+                        color="FFFFFF"
+                    />
+                </Box>
                 <FiPlus color="#689af8" size="2em" />
             </Flex>
             <Card bg="transparent" pt="7em" pb="3em">

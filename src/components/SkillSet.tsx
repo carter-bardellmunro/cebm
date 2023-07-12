@@ -9,6 +9,7 @@ import {
     SimpleGrid,
 } from '@chakra-ui/react';
 import { FiPlus, FiZap } from 'react-icons//fi';
+import SectionHeading from './SectionHeading';
 
 const skills = [
     ['JavaScript', 'TypeScript', 'React.js'],
@@ -23,12 +24,16 @@ const SkillSet = () => {
     return (
         <Box id="my-skills" py="4em">
             <Flex flexDir="row" alignItems="center" w="18em">
-                <Heading size="3xl" color="white" mr="10px">
-                    My Skills
-                </Heading>
+                <Box mr="10px">
+                    <SectionHeading
+                        text="My Skills"
+                        size="3xl"
+                        color="FFFFFF"
+                    />
+                </Box>
                 <FiPlus color="#689af8" size="2em" />
             </Flex>
-            <Flex flexDir="row" justifyContent="center" my="10em">
+            <Flex flexDir="row" justifyContent="" my="10em">
                 <SimpleGrid columns={3} spacing={10}>
                     {skills.map((skill, i) => {
                         return (
