@@ -27,6 +27,7 @@ const Footer = () => {
                     <Link
                         as={NextLink}
                         href="https://github.com/carter-bardellmunro"
+                        target="_blank"
                     >
                         <IconButton
                             icon={<FaGithub />}
@@ -41,6 +42,7 @@ const Footer = () => {
                     <Link
                         as={NextLink}
                         href="https://www.linkedin.com/in/carter-bardell-munro-b20a27123/"
+                        target="_blank"
                     >
                         <IconButton
                             icon={<FaLinkedinIn />}
