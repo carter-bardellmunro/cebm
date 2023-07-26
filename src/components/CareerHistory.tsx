@@ -75,7 +75,7 @@ const CareerHistory = () => {
             </Card>
             <Flex alignItems="center" justifyContent="center">
                 <Link
-                    href="https://drive.google.com/file/d/1V4AQurwqbFPiWvjUtb--_5F9RwoU0vC4/view?usp=drive_link"
+                    href="https://drive.google.com/file/d/1V4AQurwqbFPiWvjUtb--_5F9RwoU0vC4/view?usp=sharing"
                     target="_blank"
                     color="white"
                     _hover={{
